@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EB904782DF00E633A80E21C /* Pods_BookScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886B5FF79304979846486DDC /* Pods_BookScanner.framework */; };
 		788ECBCB1E83A134008EF02C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788ECBCA1E83A134008EF02C /* AppDelegate.swift */; };
 		788ECBCD1E83A134008EF02C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788ECBCC1E83A134008EF02C /* ViewController.swift */; };
 		788ECBD01E83A134008EF02C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788ECBCE1E83A134008EF02C /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		643210FBB17B7C7B38C0F8C9 /* Pods-BookScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookScanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookScanner/Pods-BookScanner.debug.xcconfig"; sourceTree = "<group>"; };
 		788ECBC71E83A134008EF02C /* BookScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788ECBCA1E83A134008EF02C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788ECBCC1E83A134008EF02C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		788ECBE61E83A135008EF02C /* BookScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		788ECBEA1E83A135008EF02C /* BookScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookScannerUITests.swift; sourceTree = "<group>"; };
 		788ECBEC1E83A135008EF02C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		886B5FF79304979846486DDC /* Pods_BookScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		975258E309CE1FCA259D6EC7 /* Pods-BookScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookScanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookScanner/Pods-BookScanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB904782DF00E633A80E21C /* Pods_BookScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				788ECBDE1E83A135008EF02C /* BookScannerTests */,
 				788ECBE91E83A135008EF02C /* BookScannerUITests */,
 				788ECBC81E83A134008EF02C /* Products */,
+				791651916C18FA9B0356B47F /* Pods */,
+				799194430ACE388D59101E6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = BookScannerUITests;
 			sourceTree = "<group>";
 		};
+		791651916C18FA9B0356B47F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				643210FBB17B7C7B38C0F8C9 /* Pods-BookScanner.debug.xcconfig */,
+				975258E309CE1FCA259D6EC7 /* Pods-BookScanner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		799194430ACE388D59101E6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				886B5FF79304979846486DDC /* Pods_BookScanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 788ECBEF1E83A135008EF02C /* Build configuration list for PBXNativeTarget "BookScanner" */;
 			buildPhases = (
+				9A68E3983B81FEDE55121AD9 /* [CP] Check Pods Manifest.lock */,
 				788ECBC31E83A134008EF02C /* Sources */,
 				788ECBC41E83A134008EF02C /* Frameworks */,
 				788ECBC51E83A134008EF02C /* Resources */,
+				ED603A6E8EDF91D76D10B4BC /* [CP] Embed Pods Frameworks */,
+				D2D8C994A4A93CAE396D46BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A68E3983B81FEDE55121AD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2D8C994A4A93CAE396D46BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookScanner/Pods-BookScanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED603A6E8EDF91D76D10B4BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookScanner/Pods-BookScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		788ECBC31E83A134008EF02C /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		788ECBF01E83A135008EF02C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 643210FBB17B7C7B38C0F8C9 /* Pods-BookScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 42KMS8LBB5;
@@ -426,6 +502,7 @@
 		};
 		788ECBF11E83A135008EF02C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 975258E309CE1FCA259D6EC7 /* Pods-BookScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 42KMS8LBB5;
@@ -514,6 +591,7 @@
 				788ECBF11E83A135008EF02C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		788ECBF21E83A135008EF02C /* Build configuration list for PBXNativeTarget "BookScannerTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +600,7 @@
 				788ECBF41E83A135008EF02C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		788ECBF51E83A135008EF02C /* Build configuration list for PBXNativeTarget "BookScannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +609,7 @@
 				788ECBF71E83A135008EF02C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
